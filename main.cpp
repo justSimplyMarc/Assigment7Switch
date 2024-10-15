@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
  
 int main() {
     int day;
@@ -6,16 +7,16 @@ int main() {
  
     choice = 'y';
     while(choice == 'y'||choice == 'Y' ){
-        std::cout << "DAY OF THE WEEK" << std::endl;
-        std::cout << "1 - Monday" << std::endl;
-        std::cout << "2 - Teusday" << std::endl;
-        std::cout << "3 - Wednesday" << std::endl;
-        std::cout << "4 - Thursday" << std::endl;
-        std::cout << "5 - Friday" << std::endl;
-        std::cout << "6 - Staturday" << std::endl;
-        std::cout << "7 - Sunday" << std::endl;
-        std::cout << "" << std::endl;
- 
+        std::cout << "+-----+-------------+" << std::endl;
+        std::cout << "| No. | Day of Week |" << std::endl;
+        std::cout << "+-----+-------------+" << std::endl;
+        std::cout << "| " << std::setw(3) << "1" << " | " << std::setw(11) << "Monday" << " |" << std::endl;
+        std::cout << "| " << std::setw(3) << "2" << " | " << std::setw(11) << "Tuesday" << " |" << std::endl;
+        std::cout << "| " << std::setw(3) << "3" << " | " << std::setw(11) << "Wednesday" << " |" << std::endl;
+        std::cout << "| " << std::setw(3) << "4" << " | " << std::setw(11) << "Thursday" << " |" << std::endl;
+        std::cout << "| " << std::setw(3) << "5" << " | " << std::setw(11) << "Friday" << " |" << std::endl;
+        std::cout << "+-----+-------------+" << std::endl;
+        std::cout << "";    
         std::cout << "Enter a number (1-7): ";    
         std::cin >> day;
  
