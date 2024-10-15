@@ -1,12 +1,12 @@
 #include <iostream>
 #include <iomanip>
  
-int main() {
+int main() {    
     int day;
     char choice;
  
     choice = 'y';
-    while(choice == 'y'||choice == 'Y' ){
+    while(choice == 'y' || choice == 'Y'){
         std::cout << "+-----+-------------+" << std::endl;
         std::cout << "| No. | Day of Week |" << std::endl;
         std::cout << "+-----+-------------+" << std::endl;
@@ -16,9 +16,17 @@ int main() {
         std::cout << "| " << std::setw(3) << "4" << " | " << std::setw(11) << "Thursday" << " |" << std::endl;
         std::cout << "| " << std::setw(3) << "5" << " | " << std::setw(11) << "Friday" << " |" << std::endl;
         std::cout << "+-----+-------------+" << std::endl;
-        std::cout << "";    
+ 
+        std::cout << "" << std::endl;
+ 
+        digitInvalid:
         std::cout << "Enter a number (1-7): ";    
         std::cin >> day;
+ 
+        if (day < 1 && day > 7) {            
+            std::cout << "Invalid input!!! Please enter number from 1 to 7" << std::endl;
+            goto digitInvalid;
+        }
  
         switch (day)
         {
@@ -44,8 +52,8 @@ int main() {
                 std::cout << "You selected Sunday" << std::endl;
                 break;
             default:
-                std::cout << "Invalid input!" << std::endl;
-                break;
+                std::cout << "Invalid input!!! Please enter number from 1 to 7" << std::endl;
+                goto digitInvalid;
         }
  
        
