@@ -1,1 +1,3 @@
 # Assigment7Switch
+Create a program that will display the choices below for the day of the week and its corresponding value. Ask the user to input a number from 1-7, and will then display the specific day of the week. Then, ask the user if he/she wants to end the program or try again to which you will direct the user to input again another number (back to start, program will not end unless user choose the 'no' option). Use switch function.
+Submit here a document containing the screenshot of your source code and 1 sample output for each case. I'm expecting 10 screenshots in your document (1 source code, 7 sample output-1 for each case, 1 for the try again option, 1 error handling sample output) 
